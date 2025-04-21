@@ -1,0 +1,32 @@
+<!-- Cart Page HTML content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-gray-800 text-white p-4">
+        <nav class="container mx-auto flex justify-between">
+            <div class="text-lg font-bold">E-Shop</div>
+            <div>
+                <a href="checkout.html" class="mr-4">Checkout</a>
+                <a href="index.html" class="mr-4">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="p-6">
+        <h1 class="text-3xl font-bold mb-6">Your Cart</h1>
+
+        <div id="cart-items" class="space-y-4"></div>
+        <div class="mt-6 text-right">
+            <button onclick="clearCart()" class="bg-red-500 text-white p-2">Clear Cart</button>
+        </div>
+    </main>
+
+    <script src="scripts/cart.js"></script>
+</body>
+</html>
